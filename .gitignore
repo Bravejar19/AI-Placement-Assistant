@@ -1,0 +1,129 @@
+# =========================================================
+# Python
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+venv/
+.venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+
+# =========================================================
+# Environment / Secrets
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+# =========================================================
+# Gmail credentials
+# IMPORTANT: never upload these
+# =========================================================
+
+gmail/credentials.json
+gmail/token.json
+
+# =========================================================
+# Local database
+# =========================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+database/opportunities.db
+
+# =========================================================
+# Resume / personal documents
+# =========================================================
+
+resume/*.pdf
+resume/*.doc
+resume/*.docx
+
+# =========================================================
+# Generated analysis / processing data
+# =========================================================
+
+analysis_results/*
+attachments/*
+processed_documents/*
+logs/*
+
+# Keep folder structure
+!analysis_results/.gitkeep
+!attachments/.gitkeep
+!processed_documents/.gitkeep
+!logs/.gitkeep
+
+# =========================================================
+# Recovery / temporary files
+# =========================================================
+
+*.tmp
+*.temp
+*.bak
+
+# =========================================================
+# macOS
+# =========================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================================================
+# IntelliJ IDEA
+# =========================================================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================================================
+# Node / React
+# =========================================================
+
+node_modules/
+frontend-react/node_modules/
+
+frontend-react/dist/
+frontend-react/.vite/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================================
+# Streamlit
+# =========================================================
+
+.streamlit/
+
+# =========================================================
+# VS Code
+# =========================================================
+
+.vscode/
+
+# =========================================================
+# OS / editor temporary files
+# =========================================================
+
+*.swp
+*.swo
+*~
+# Development / recovery scripts
+inspect_missing_jds.py
+missing_jd_emails/
+recover_gmail_jds.py
+recover_jds.py
+recover_jds.py.save
+recover_workday.py
